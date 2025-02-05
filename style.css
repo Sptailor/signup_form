@@ -34,21 +34,25 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
-    background-color:#faebd75c;
+    background: #5555551c;
+    /* background-color:#e3d8ca5c; */
+
     height: 100vh;
 }
 
 /* Title Container */
 #info {
-    text-align: left;
+    text-align: center;
     margin-bottom: 20px;
+    /* padding-left: 4%; */
 }
 
 /* Form Container */
 #form-container {
     width: 100%;
-    max-width: 500px;
+    /* background: #5858580f; */
+    background-color:#ffffffb0;
+    border-radius: 4%;
 }
 
 /* Form Layout: Two Columns, Three Rows */
@@ -58,10 +62,19 @@ form {
     gap: 15px; /* Space between fields */
     align-items: center;
     margin-top: 3rem; 
+    /* padding-left: 4%; */
 
 }
+#form-container *{
+    padding-left: 4%;
+}
 form > div{
-    margin: 1%
+    margin: 1%;
+    
+}
+
+#form-header{
+padding-left: 8%;
 }
 
 /* Make labels align properly */
