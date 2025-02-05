@@ -1,0 +1,145 @@
+/* General Page Styling */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Outer container */
+#outer-div {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left Section */
+#left {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-image: url(background.jpg);
+    position: static;
+    background-size: cover;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+
+}
+
+/* Right Section */
+#right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    background-color:#faebd75c;
+    height: 100vh;
+}
+
+/* Title Container */
+#info {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Form Container */
+#form-container {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Form Layout: Two Columns, Three Rows */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 15px; /* Space between fields */
+    align-items: center;
+    margin-top: 3rem; 
+
+}
+form > div{
+    margin: 1%
+}
+
+/* Make labels align properly */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Make inputs full width inside their columns */
+input {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input:focus{
+    border: solid blue 2px;
+}
+
+
+/* Full-Width Button */
+#create {
+    width: 11rem;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color:#596D48;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#create:hover {
+    background-color: #45a049;
+}
+
+/* Center Login Text */
+p {
+    text-align: center;
+    grid-column: span 2;
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'NorseBold';
+    color: aliceblue;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: #0c0c0c75;
+    justify-content: center;
+}
+#logo text{
+    font-size: 50px; /* Match the logo height */
+   
+}
+#logo img{
+height: 60px;
+width: auto;
+}
+@font-face {
+    font-family: 'NorseBold';
+    src: url('Norse-Bold.otf') format('opentype'); /* If font is in the same directory */
+    font-weight: bold;
+    font-style: normal;
+    
+}
+
+
